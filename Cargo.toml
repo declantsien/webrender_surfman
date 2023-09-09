@@ -12,5 +12,5 @@ path = "lib.rs"
 
 [dependencies]
 euclid = "0.22"
-surfman = "0.6"
-surfman-chains = "0.7"
+# NOTE: the sm-angle feature only enables angle on windows, not other platforms!
+surfman = { version = "0.8", features = ["chains", "sm-angle", "sm-angle-default"] }
